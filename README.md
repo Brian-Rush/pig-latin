@@ -13,7 +13,7 @@ _This webpage translates user input into Pig Latin. It was created for an assign
 Behavior | Input | Output
 --- | --- | ---
 The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels. | 3 | 3
-The program adds "ay" to single-letter words beginning with a vowel. | i | iway
+The program adds "way" to single-letter words (beginning with a vowel). | i | iway
 The program adds “way” to multiple-letter words beginning with a vowel. | at | atway
 The program moves initial consonant to end of multiple-letter words beginning with a single consonant and then appends “ay” | pig | igpay
 The program moves y to the end of multiple-letter words that begin with y, then appends “ay”. | yellow | ellowyay
