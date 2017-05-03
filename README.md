@@ -20,6 +20,7 @@ The program moves y to the end of multiple-letter words that begin with y, then 
 The program moves initial consecutive consonants to end of multiple-letter words beginning with multiple consonants and then appends “ay” | drop | opdray
 The program moves “qu” to end of multiple-letter words beginning with “qu” and then appends “ay” | quiet | ietquay
 The program moves “qu” and preceding consonants to end of multiple-letter words in which qu is included in the initial consecutive consonant group, and then appends “ay” | squeal | ealsquay
+The program splits sentences into individual words and applies all previous applicable rules to each word. | I want 1 sentence in your pretty quiet squealy example. | Iway antway 1 entencesay inway ouryay ettypray ietquay ealysquay exampleway.
 
 
 
