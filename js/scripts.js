@@ -5,6 +5,8 @@
 //consonant array
 var consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z", "B", "C", 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'X', 'Z'];
 
+var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+
 //isolates first letter of word
 var firstLetter = function (word) {
   word.charAt(0);
@@ -24,19 +26,19 @@ var foo = function (word) {
   };
 };
 
-//determines if first letter is not a consonant and returns apt pig latin
-// var initVowel = function(word) {
-//
-//   if (!consonants.includes(firstLetter)) {
-//     return word + "way";
-//   };
-// };
+// determines if first letter is not a consonant and returns apt pig latin
+var initVowel = function(word) {
+  var firstLetter = word.charAt(0);
+  if (vowels.includes(firstLetter)) {
+    return true;
+  };
+};
 
 var foo2 = function (x) {
-	if (x.length === 1) {
+	if (x.length === 1 || initVowel(x)) {
   	return x + "way";
   } else {
-  return foo(x);
+      return foo(x);
   }
 };
 
